@@ -31,6 +31,7 @@ export default function Home ({ navigation }:any){
             <Text style={styles.btnText}>FeedBack</Text>
         </TouchableOpacity>
         </View>
+        
     </>)
 }
 
