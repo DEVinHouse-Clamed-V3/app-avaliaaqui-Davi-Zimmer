@@ -50,7 +50,6 @@ export default function Products(){
     
     const [loading, setLoading] = useState(true)
 
-
     async function loadDataBase(){
         axios.get('http://localHost:3000/products').then( res => {
             setDataBase( res.data )

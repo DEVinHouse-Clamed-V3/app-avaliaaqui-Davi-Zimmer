@@ -52,11 +52,11 @@ type OptionPickerProps = {
     value: string
     style?: ViewStyle
     children: React.ReactElement<ChoiceItemProps>[]
-    onSelectionChange:  React.Dispatch<React.SetStateAction<string>>
+    onSelectionChange: React.Dispatch<React.SetStateAction<string>>
 }
 
 const OptionPicker:React.FC<OptionPickerProps> = (
-    { children, style, onSelectionChange, value, defaultValue }: OptionPickerProps) => {
+    { children, style, onSelectionChange, value}: OptionPickerProps) => {
 
     const Alert = ( name:string ) => {
         onSelectionChange( name )
